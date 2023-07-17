@@ -21,9 +21,6 @@ module.exports = {
     name: "@storybook/nextjs",
     options: {},
   },
-  // async webpackFinal(config) {
-  //   config.resolve.alias["next/image"] = require.resolve("./NextImage.js");
-  // },
   webpackFinal: async (config) => {
     config.resolve.alias["next/image"] = require.resolve("./NextImage.js");
     return config;
