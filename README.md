@@ -3,6 +3,8 @@
  - Typescript
  - Storybook
 
+All with the newest versions.
+
 
 #### Getting Started
 ```js
