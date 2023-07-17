@@ -2,6 +2,8 @@
  - TailwindCss 3
  - Typescript
  - Storybook
+ - Husky
+ - Eslint with prettier
 
 All with the newest versions.
 
