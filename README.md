@@ -15,7 +15,7 @@ npm install && npm run storybook
 yarn && yarn storybook
 ```
 
-If you use npm make sure to erase yarn.lock as it is not recommended to mix package managers.
+If you use npm make sure to delete yarn.lock as it is not recommended to mix package managers.
 
 
 If it is the first time you run ```yarn storybook``` and the components won't render as expected(image below) make sure to refresh or hard refresh if needed.
