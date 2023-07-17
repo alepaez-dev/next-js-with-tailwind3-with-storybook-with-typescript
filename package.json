@@ -7,22 +7,41 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "type-check": "tsc --pretty --noEmit",
+    "prepare": "husky install",
+    "pre-commit": "lint-staged",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "yarn run type-check"
+    }
+  },
+  "lint-staged": {
+    "*.@(ts|tsx)": [
+      "eslint '*/**/*.{ts,tsx}' --fix"
+    ]
   },
   "dependencies": {
     "@types/node": "20.4.2",
     "@types/react": "18.2.15",
     "@types/react-dom": "18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
     "autoprefixer": "^10.4.14",
-    "eslint": "8.45.0",
-    "eslint-config-next": "13.4.10",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-security": "^1.7.1",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-sonarjs": "^0.19.0",
     "next": "13.4.10",
     "postcss": "^8.4.26",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "storybook": "next",
     "tailwindcss": "^3.3.3",
+    "tslint-config-prettier": "^1.18.0",
     "typescript": "5.1.6"
   },
   "devDependencies": {
@@ -36,7 +55,14 @@
     "@storybook/nextjs": "^7.0.27",
     "@storybook/testing-library": "^0.2.0",
     "babel-loader": "^8.3.0",
+    "eslint": "^8.45.0",
+    "eslint-config-next": "^13.4.10",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-storybook": "^0.6.12",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.3",
+    "prettier": "^3.0.0",
     "sass": "^1.63.6"
   }
 }
