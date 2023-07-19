@@ -18,6 +18,6 @@ yarn && yarn storybook
 If you use npm make sure to delete yarn.lock as it is not recommended to mix package managers.
 
 
-If it is the first time you run ```yarn storybook``` and the components won't render as expected(image below) make sure to refresh or hard refresh if needed.
+If it is the first time you run ```yarn storybook``` and the components won't render as expected(image below) make sure to refresh or hard refresh if needed or update storybook to 7.1.0.
 <img width="1512" alt="Screen Shot 2023-07-16 at 17 51 24" src="https://github.com/alepaez-dev/next-js-with-tailwind3-with-storybook-with-typescript/assets/74441510/29576ae7-c2e2-4893-af62-29a7a291ceb8">
 
